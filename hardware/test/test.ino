@@ -14,8 +14,8 @@
 #define LED3_PIN D8         // New motion-activated LED
 
 // Network and MQTT configuration
-const char* ssid = "Hieu Pham";    
-const char* password = "hieupham";    
+const char* ssid = "GIANG QUAN_5G";    
+const char* password = "20111991";    
 const char* mqtt_server = "172.20.10.2";
 const char* topic = "dataSensor";
 const char* user = "tung";
