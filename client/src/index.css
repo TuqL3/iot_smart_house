@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 15px green)
+      drop-shadow(0 0 20px green);
+  }
+
+  to {
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 25px green)
+      drop-shadow(0 0 40px green);
+  }
+}
+
+@keyframes morphing {
+  0% {
+    border-radius: 50%;
+  }
+  10% {
+    border-radius: 48% 52% 51% 49% / 41% 54% 46% 59%;
+  }
+  20% {
+    border-radius: 55% 45% 51% 49% / 50% 54% 46% 50%;
+  }
+  30% {
+    border-radius: 55% 45% 51% 49% / 50% 59% 41% 50%;
+  }
+  40% {
+    border-radius: 55% 45% 59% 41% / 50% 55% 45% 50%;
+  }
+
+  50% {
+    border-radius: 47% 53% 46% 54% / 50% 55% 45% 50%;
+  }
+  60% {
+    border-radius: 47% 53% 46% 54% / 56% 55% 45% 44%;
+  }
+  70% {
+    border-radius: 47% 53% 46% 54% / 46% 38% 62% 54%;
+  }
+  80% {
+    border-radius: 40% 60% 46% 54% / 46% 49% 51% 54%;
+  }
+  90% {
+    border-radius: 46% 54% 46% 54% / 55% 49% 51% 45%;
+  }
+}
+@keyframes change {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
